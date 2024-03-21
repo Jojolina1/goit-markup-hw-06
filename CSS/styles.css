@@ -590,6 +590,10 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  transition: color var(--transition);
+}
+.label:focus-within svg {
+  color: blue;
 }
 .modal-link {
   font-family: "Roboto", sans-serif;
@@ -680,7 +684,4 @@ body {
   position: absolute;
   fill: #2e2f42;
   top: 40%;
-}
-.modal-svg:focus-within {
-  fill: rgb(77, 90, 229);
 }
